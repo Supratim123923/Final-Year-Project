@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/Register.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="register">
+      {{#if message}}
+            <div class="alert {{messageClass}}" role="alert">
+                {{message}}
+            </div>
+        {{/if}}
+      <nav class="navbar1">
+        <div class="internal-nav1">
+          <div class="links3">
+            <div class="company-logo1">
+              <a class="blank1" href="/">Blank</a>
+            </div>
+            <div class="nav-links1">
+              <a class="login-link" href="/">Home</a
+              ><a class="login-link" href="pricing">Pricing</a
+              ><a class="login-link" href="AboutUs">About</a
+              ><a class="login-link" href="contact">Contact</a>
+            </div>
+          </div>
+          <div class="buttons3">
+            <div class="signup-and-login1">
+              <a class="sign-up1" href="Register" id="signUp"
+                >Sign up</a
+              ><button class="login-button1" id="loginButton">
+                <div class="log-in1">Log in</div>
+              </button>
+            </div>
+            <button class="hamburger-icon1" id="hamburgerIcon">
+              <img class="icon13" alt="" src="../public/icon.svg" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <main class="main">
+        <div class="inner-main">
+          <form class="register-form" method="post">
+            <div class="heading23">Join Us!</div>
+            <button class="google-button" id="googleButton">
+              <img class="logo-icon" alt="" src="../public/logo.svg" />
+              <div class="sign-up-with">Sign up with Google</div>
+            </button>
+            <div class="email-text">
+              <img
+                class="email-text-child"
+                alt=""
+                src="../public/line-1@2x.png"
+              />
+              <div class="text26">Sign up with your Email</div>
+              <img
+                class="email-text-child"
+                alt=""
+                src="../public/line-1@2x.png"
+              />
+            </div>
+            <div class="input-form">
+              <div class="email-box">
+                <label class="label10">Email Address</label
+                ><input
+                  class="input-box"
+                  type="email"
+                  placeholder="Insert your email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="email-box">
+                <label class="label10">Password</label
+                ><input
+                  class="input-box1"
+                  type="password"
+                  placeholder="Insert your password"
+                  name="password"
+                  required
+                />
+              </div>
+            </div>
+            <div class="footer-area">
+              <button class="signup-button" id="signupButton">
+                <div class="log-in1">Sign Up</div></button
+              ><button class="cancel-button" id="cancelButton">
+                <div class="text28">Cancel</div>
+              </button>
+              <div class="login1">
+                <div class="footer-text">Already have an account?</div>
+                <a class="login-link" href="Login">Login</a>
+              </div>
+            </div>
+          </form>
+          <img
+            class="register-image-icon"
+            alt=""
+            src="../public/register-image@2x.png"
+          />
+        </div>
+      </main>
+    </div>
+
+    <script>
+      var signUp = document.getElementById("signUp");
+      if (signUp) {
+        signUp.addEventListener("click", function () {
+          window.location.href = "Register";
+        });
+      }
+      
+      var loginButton = document.getElementById("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", function (e) {
+          window.location.href = "Login";
+        });
+      }
+      
+      var hamburgerIcon = document.getElementById("hamburgerIcon");
+      if (hamburgerIcon) {
+        hamburgerIcon.addEventListener("click", function () {
+          window.location.href = "Error";
+        });
+      }
+      
+      var googleButton = document.getElementById("googleButton");
+      if (googleButton) {
+        googleButton.addEventListener("click", function (e) {
+          window.location.href = "Error";
+        });
+      }
+      
+      /*var signupButton = document.getElementById("signupButton");
+      if (signupButton) {
+        signupButton.addEventListener("click", function () {
+          window.location.href = "Error";
+        });
+      }*/
+      
+      var cancelButton = document.getElementById("cancelButton");
+      if (cancelButton) {
+        cancelButton.addEventListener("click", function () {
+          history.back();
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/Error.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="error">
+      <img class="error-image-icon" alt="" src="../public/error-image@2x.png" />
+      <header class="header">
+        <div class="not-found">404 Not Found</div>
+        <div class="looks-like-youre">
+          Looks like you're wandering off the beaten path.
+        </div>
+        <div class="the-page-you">
+          The page you requested could not be found
+        </div>
+      </header>
+      <button class="main-button" id="mainButton">
+        <div class="text25">Home</div>
+      </button>
+      <footer class="footer-buttons">
+        <a class="pricing2" href="pricing">Pricing</a
+        ><a class="pricing2" href="AboutUs">About</a
+        ><a class="pricing2" href="contact">Contact</a
+        ><a class="pricing2" href="PrivacyPolicy">Privacy</a>
+      </footer>
+    </div>
+
+    <script>
+      var mainButton = document.getElementById("mainButton");
+      if (mainButton) {
+        mainButton.addEventListener("click", function () {
+          window.location.href = "index";
+        });
+      }
+      </script>
+  </body>
+</html>

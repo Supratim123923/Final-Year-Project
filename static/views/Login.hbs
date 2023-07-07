@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/Login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login2">
+      <nav class="navbar2">
+        <div class="internal-nav2">
+          <div class="links4">
+            <div class="company-logo2">
+              <a class="blank2" href="/">Blank</a>
+            </div>
+            <div class="nav-links2">
+              <a class="home4" href="/">Home</a
+              ><a class="home4" href="pricing">Pricing</a
+              ><a class="home4" href="AboutUs">About</a
+              ><a class="home4" href="contact">Contact</a>
+            </div>
+          </div>
+          <div class="buttons4">
+            <div class="signup-and-login2">
+              <a class="register-link" href="Register" id="signUp"
+                >Sign up</a
+              ><button class="login-button2" id="loginButton">
+                <div class="log-in2">Log in</div>
+              </button>
+            </div>
+            <button class="hamburger-icon2" id="hamburgerIcon">
+              <img class="icon14" alt="" src="../public/icon.svg" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <main class="main1">
+        <div class="inner-main1">
+          <img
+            class="login-image-icon"
+            alt=""
+            src="../public/login-image@2x.png"
+          />
+          <form class="login-form" method="post">
+            <div class="heading24">Welcome back!</div>
+            <button class="google-button1" id="googleButton">
+              <img class="logo-icon1" alt="" src="../public/logo1.svg" />
+              <div class="sign-in-with">Sign in with Google</div>
+            </button>
+            <div class="email-text1">
+              <img
+                class="email-text-inner"
+                alt=""
+                src="../public/line-1@2x.png"
+              />
+              <div class="text29">Sign in with your Email</div>
+              <img
+                class="email-text-inner"
+                alt=""
+                src="../public/line-1@2x.png"
+              />
+            </div>
+            <div class="input-form1">
+              <div class="email-box1">
+                <label class="label12">Email Address</label
+                ><input
+                  class="input-box2"
+                  type="email"
+                  placeholder="Insert your email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="email-box1">
+                <label class="label12">Password</label
+                ><input
+                  class="input-box3"
+                  type="password"
+                  placeholder="Insert your password"
+                  name="password"
+                  required
+                />
+              </div>
+            </div>
+            <div class="forgot-password">
+              <a class="text30" href="RememberPassword" id="text1"
+                >Forgot password?</a
+              >
+            </div>
+            <div class="footer-area1">
+              <button class="signin-button" id="signinButton">
+                <div class="log-in2">Log in</div></button
+              ><button class="cancel-button1" id="cancelButton">
+                <div class="text32">Cancel</div>
+              </button>
+              <div class="register1">
+                <div class="footer-text1">Dont’t have an account?</div>
+                <a class="register-link" href="Register" id="registerLink"
+                  >Register</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      var signUp = document.getElementById("signUp");
+      if (signUp) {
+        signUp.addEventListener("click", function (e) {
+          window.location.href = "Register";
+        });
+      }
+      
+      var loginButton = document.getElementById("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", function () {
+          window.location.href = "Login";
+        });
+      }
+      
+      var hamburgerIcon = document.getElementById("hamburgerIcon");
+      if (hamburgerIcon) {
+        hamburgerIcon.addEventListener("click", function () {
+          window.location.href = "Error";
+        });
+      }
+      
+      var googleButton = document.getElementById("googleButton");
+      if (googleButton) {
+        googleButton.addEventListener("click", function (e) {
+          window.location.href = "Error";
+        });
+      }
+      
+      var text1 = document.getElementById("text1");
+      if (text1) {
+        text1.addEventListener("click", function (e) {
+          window.location.href = "RememberPassword";
+        });
+      }
+      
+     /* var signinButton = document.getElementById("signinButton");
+      if (signinButton) {
+        signinButton.addEventListener("click", function () {
+          window.location.href = "Error";
+        });
+      }*/
+      
+      var cancelButton = document.getElementById("cancelButton");
+      if (cancelButton) {
+        cancelButton.addEventListener("click", function () {
+          history.back();
+        });
+      }
+      
+      var registerLink = document.getElementById("registerLink");
+      if (registerLink) {
+        registerLink.addEventListener("click", function (e) {
+          window.location.href = "Register";
+        });
+      }
+      </script>
+  </body>
+</html>

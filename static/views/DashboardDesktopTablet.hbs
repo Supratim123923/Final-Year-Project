@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../css/globalcopy.css"/>
+    <link rel="stylesheet" href="../css/DashboardDesktopTablet.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <main class="dashboard">
+      <div class="background">
+        <nav class="navbar1">
+          <div class="internal-nav1">
+            <div class="links3">
+              <div class="company-logo1">
+                <a class="blank1" href="/">Blank</a>
+              </div>
+              <div class="nav-links1">
+                <a class="upload" href="/upload">Upload</a>
+                <a class="upload" href="/analyze">Analyze</a>
+              </div>
+            </div>
+            <div class="buttons3">
+              <div></div>
+              <a class="profile-icon" href="./Error.html"> </a>
+              <button class="hamburger-icon1" id="hamburgerIcon">
+                <img class="icon13" alt="" src="../public/icon11.svg" />
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="content-section">
+          <div class="upper-part">
+            <a class="box-3" href="/dashboardneuinner">  
+              <div class="box-1-content">
+                <p class="neutral-review">Neutral Review</p>
+                <p class="p">{{Neuval}}</p>
+                <img class="help-icon" alt="" src="../public/help@2x.png" />
+              </div>
+            </a>
+            <a class="box-2" href="/dashboardneginner">
+              <div class="box-1-content">
+                <p class="neutral-review">Negative Review</p>
+                <p class="p">{{Negval}}</p>
+                <img class="help-icon" alt="" src="../public/help1@2x.png" />
+              </div>
+            </a>
+            <a class="box-1" href="/dashboardposinner">
+              <div class="box-1-content">
+                <p class="neutral-review">Positive Review</p>
+                <p class="p">{{Posval}}</p>
+                <img class="help-icon" alt="" src="../public/help2@2x.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      var hamburgerIcon = document.getElementById("hamburgerIcon");
+      if (hamburgerIcon) {
+        hamburgerIcon.addEventListener("click", function () {
+          window.location.href = "https://github.com/";
+        });
+      }
+      </script>
+      <script src="../../dash.js"></script>
+  </body>
+</html>

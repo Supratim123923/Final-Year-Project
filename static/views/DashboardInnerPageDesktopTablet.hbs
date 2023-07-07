@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Positive Inner Page</title>
+  <style>
+    /* CSS styles for the table */
+    .table-container {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table-container th,
+    .table-container td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .table-container th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Positive Reviews</h1>
+
+  <table class="table-container">
+    <thead>
+      <tr>
+        <th>Reviews</th>
+        <!-- Add more column headers if needed -->
+      </tr>
+    </thead>
+    <tbody>
+      {{#each row}}
+      {{#if this.PositiveReview}}
+        <tr>
+            <td>{{this.PositiveReview}}</td>
+            <!-- Render more columns if needed -->
+        </tr>
+      {{/if}}
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>
